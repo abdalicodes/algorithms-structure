@@ -8,6 +8,7 @@
 //   reverseInt(-100) === -1
 
 function reverseInt(n) {
+  // O(10log n)
   let reversedN = parseInt(n.toString().split("").reverse().join(""));
   if (n < 0) reversedN = reversedN * -1;
   return reversedN;
